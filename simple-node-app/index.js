@@ -8,7 +8,7 @@ const DBpass = process.env.DBpass
 const DBhosts = process.env.DBhosts
 
 async function main() {
-
+                /// user:password@pod.service.namespace:port/databasename
     const uri = `mongodb://drage:secretpassword123@mongodb-0.mongodb-headless.database:27017/inventory`;
     const client = new MongoClient(uri);
 
